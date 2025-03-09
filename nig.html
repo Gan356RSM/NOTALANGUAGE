@@ -1,0 +1,8 @@
+{% extends 'alkali.html' %}
+
+{% block content %}
+    {% for p in blog_posts %}
+        <h1>{{p.title}}</h1>
+        <a href="?pid={{p.pid}}">Read more</a>
+    {% endfor %}
+{% endblock %}

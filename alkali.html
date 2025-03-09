@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="{{url_for('static', filename='still.css')}}">
+    </head>
+    <body>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <nav>
+            <div>
+                <a href="/">Home</a>
+            </div>
+            <div>
+                <a href="/posts">Posts</a>
+                <a href="/login">Login</a>
+                <a href="/fun">Fun</a>  
+                <a href="/nig">Nig</a> 
+            </div>    
+        </nav>
+    </body>
+</html>
