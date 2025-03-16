@@ -5,11 +5,18 @@
         <h1 class="dash_border">Enter Username</h1>
     </div>
     <div class = "body">
-        <form>
-            <h1>Username: Doesnt work</h1>
-            <input type="text"><button type="button">Enter</button>
-            <h1>Password: Doesnt work</h1>
-            <input type="text"><button type="button">Enter</button>
+        <form action="/login" method="SIGNIN">
+            <div>
+                <h1>Username:</h1>
+                <input type="text" name="User"><button type="button">Enter</button>
+            </div>
+            <div>
+                <h1>Password:</h1>
+                <input type="text" name="Pass"><button type="button">Enter</button>
+            </div>
+            <div>
+                <input type="submit" value="Create Account">
+            </div>
         </form>
     </div>
 {% endblock %}
